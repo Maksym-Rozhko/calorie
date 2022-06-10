@@ -5,8 +5,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--cs-dark);
-    background-image: url('../../images/home/bg.jpg');
+    background-color: var(--cs-body-bg);
+    background-image: url('../../images/home/ready-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -50,7 +50,7 @@
                 border: 10px solid rgba(8,8,8,1);
                 border-radius: 200px;
                 text-shadow: 2px 2px 0px rgba(0,0,0,1);
-                box-shadow: 0px 0px 30px rgba(251, 152, 23, .5);
+                box-shadow: 0px 0px 30px rgba(251, 84, 23, 0.5);
                 animation: pulseShadow 5s infinite linear;
 
                 &::after{
@@ -72,9 +72,9 @@
                     position: absolute;
                     width: 120px;
                     height: 120px;
-                    background: url('../../images/icon/preloader-bit-gold.svg');
+                    background: url('../../images/icon/preloader.svg');
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: contain;
                     background-position: center;
                     top: calc(50% - 60px);
                     left: calc(50% - 60px);
@@ -101,7 +101,7 @@
                 height: 270px;
                 border-width: 2px;
                 border-style: dotted;
-                box-shadow: 0px 0px 20px rgba(251, 152, 23, .5);
+                box-shadow: 0px 0px 20px rgba(251, 80, 23, 0.5);
                 animation: spinBG2 2s infinite linear;
             }
 
@@ -112,7 +112,7 @@
                 width: 296px;
                 height: 296px;
                 border-width: 2px;
-                box-shadow: inset 0px 0px 25px rgba(251, 152, 23, .25);
+                box-shadow: inset 0px 0px 25px rgba(251, 84, 23, 0.25);
                 animation: spinBG 12s infinite linear;
             }
             
@@ -124,7 +124,7 @@
                 height: 330px;
                 border-width: 5px;
                 border-style: solid;
-                box-shadow: inset 0px 0px 25px rgba(251, 152, 23, 1);
+                box-shadow: inset 0px 0px 25px rgb(251, 80, 23);
                 animation: spinBG3 8s infinite linear;
             }
         }
