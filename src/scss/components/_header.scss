@@ -6,6 +6,25 @@
     right: 0;
     z-index: 111;
     cursor: default;
+    padding: 21px 0;
+
+    &__container {
+        @include flex-all-sb;
+    }
+
+    .link-download {
+        @include link-download;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .btn-main {
+        @include btn-main;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 40px;
+        margin-right: 15px;
+    }
 
     .burger {
         @include burger;
@@ -14,8 +33,12 @@
     .mobile-menu {
         @include mobile-menu;
     }
+
+    &__group {
+        @include flex-v-center;
+    }
 }
 
 .header.active-scroll {
-    background-color: var(--cs-grey);
+    background-color: #202435;
 }

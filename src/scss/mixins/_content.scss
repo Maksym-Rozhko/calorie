@@ -1,19 +1,97 @@
-@mixin btn-transparent {
+@mixin btn-main {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--cs-text);
+    border-radius: 30px;
+    padding: 6px 16px;
+    background: rgba(234, 235, 240, 0.1);
+    transition: all ease-in-out .4s;
+    position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 30px; 
+        padding: 1px; 
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 14.71%, rgba(255, 255, 255, 0) 48.53%);
+        -webkit-mask: 
+           linear-gradient(#fff 0 0) content-box, 
+           linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+                mask-composite: exclude; 
+        transition: all ease-in-out .4s;
+    }
+    
     &:hover {
+        color: var(--cs-main);
 
+        &::before {
+            background: linear-gradient(135deg, rgb(252, 80, 42) 14.71%, rgba(255, 255, 255, 0) 48.53%);
+        }
     }
 }
 
-@mixin btn-link {
+@mixin link-download {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    color: var(--cs-text);
+    position: relative;
+    padding-left: 23px;
+    transition: all ease-in-out .4s;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url('../../images/icon/google-play.svg');
+        width: 16px;
+        height: 17px;
+        left: 0;
+        top: calc(50% - 9px);
+        transition: all ease-in-out .4s;
+    }
 
     &:hover {
+        color: var(--cs-main);
 
+        &::before {
+            transform: scale(1.2);
+        }
     }
 }
 
 @mixin btn-animate {
+    @include flex-all-center;
+    min-width: 200px;
+    padding: 11px 16px;
+    z-index: 1;
+    
+    .circle-arrow {
+        width: 35px;
+        height: 35px;
+        background-color: #FF5D39;
+        @include flex-all-center;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+        transform: translateX(-78px);
+        transition: all ease-in-out .4s;
 
+        .icon {
+            width: 12px;
+            height: 12px;
+            color: var(--cs-text);
+        }
+    }
+
+    &:hover {
+        .circle-arrow {
+            transform: translateX(78px);
+        }
+    }
 }
 
 @mixin title {

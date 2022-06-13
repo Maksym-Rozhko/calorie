@@ -1,3 +1,41 @@
+@include large-desktop {
+    .main-screen {
+        &__video {
+            width: 100vw;
+        }
+    }
+}
+
 @include mobile {
-    
+    .header {
+        &__group {
+            .link-download {
+                display: none;
+            }
+        }
+    }
+    .main-screen {
+        background-image: url('../../../images/home/bg-mob.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+
+        &__video {
+            display: none;
+        }
+
+        &__container {
+            height: 90vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 70px;
+        }
+
+        .btns-group {
+            @include flex-v-center;
+            flex-direction: column;
+        }
+    }
 }

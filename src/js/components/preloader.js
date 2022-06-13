@@ -1,5 +1,6 @@
 function preloader(preloader) {
     const loader = document.querySelector(preloader);
+    const video = document.querySelector('.main-screen__video');
 
     if (loader) {
         setTimeout(() => {
@@ -10,6 +11,8 @@ function preloader(preloader) {
         }, 3500);
         setTimeout(() => {
             loader.remove();
+            video.setAttribute('autoplay', 'autoplay');
+            video.play();
         }, 5500);
     }
 };

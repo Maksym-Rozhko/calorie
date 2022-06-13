@@ -1,0 +1,25 @@
+.main-screen {
+    position: relative;
+
+    &__video {
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .btns-group {
+        display: none;
+
+        .link-download {
+            @include link-download;
+        }
+
+        .btn-main {
+            @include btn-main;
+            @include btn-animate;
+            margin-bottom: 20px;
+        }
+    }
+}
