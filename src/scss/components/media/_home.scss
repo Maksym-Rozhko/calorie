@@ -18,6 +18,18 @@
             min-height: 550px;
         }
     }
+    .section-steps {
+        &__container {
+            margin-top: 35px;
+            margin-bottom: 35px;
+    
+            .steps {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 700px;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 @include small-desktop {
@@ -26,6 +38,14 @@
 
         &__video {
             min-height: 450px;
+        }
+    }
+    .section-steps {
+        &__container {
+            .steps {
+                display: flex;
+                max-width: 335px;
+            }
         }
     }
 }
@@ -43,10 +63,20 @@
             margin-bottom: 30px;
         }
     }
+    .section-steps {
+        .section__title {
+            font-size: 60px;
+        }
+    }
 }
 
 @include small-tablet {
     .large-text {
+        .section__title {
+            font-size: 40px;
+        }
+    }
+    .section-steps {
         .section__title {
             font-size: 40px;
         }
@@ -121,6 +151,26 @@
             margin-top: 30px;
             margin-bottom: 30px;
             max-width: 332px;
+        }
+    }
+    .section-steps {
+        padding: 70px 0;
+
+        .section__title {
+            font-size: 40px;
+        }
+    }
+}
+
+@include small-mobile {
+    .section-steps {
+        .steps-slider {
+            &__controls {
+                .swiper-pagination {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
         }
     }
 }
