@@ -1,7 +1,54 @@
 @include large-desktop {
     .main-screen {
+        max-height: 800px;
+        min-height: 630px;
+        height: auto;
+
         &__video {
             width: 100vw;
+        }
+    }
+}
+
+@include big-desktop {
+    .main-screen {
+        min-height: 550px;
+
+        &__video {
+            min-height: 550px;
+        }
+    }
+}
+
+@include small-desktop {
+    .main-screen {
+        min-height: 450px;
+
+        &__video {
+            min-height: 450px;
+        }
+    }
+}
+
+@include tablet {
+    .large-text {
+        padding: 145px 0;
+
+        .section__title {
+            font-size: 60px;
+        }
+    
+        .section__text {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@include small-tablet {
+    .large-text {
+        .section__title {
+            font-size: 40px;
         }
     }
 }
@@ -20,13 +67,15 @@
         background-position: center;
         background-size: cover;
         height: 100vh;
+        min-height: inherit;
+        display: flex;
 
         &__video {
             display: none;
         }
 
         &__container {
-            height: 90vh;
+            height: 100%;
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -36,6 +85,42 @@
         .btns-group {
             @include flex-v-center;
             flex-direction: column;
+        }
+    }
+    .large-text {
+        padding-top: 120px;
+        padding-bottom: 223px;
+
+        &::before {
+            width: 185px;
+            height: 185px;
+            bottom: -93px;
+            left: -93px;
+            filter: blur(243px);
+        }
+
+        .stones.stones-mob {
+            display: block;
+        }
+
+        .section__title {
+            line-height: 125%;
+
+            .fire-img {
+                width: 33px;
+                height: 41px;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .section__text {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            max-width: 332px;
         }
     }
 }

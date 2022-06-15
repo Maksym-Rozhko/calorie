@@ -1,5 +1,6 @@
 .main-screen {
     position: relative;
+    height: 90vh;
 
     &__video {
         position: absolute;
@@ -21,5 +22,72 @@
             @include btn-animate;
             margin-bottom: 20px;
         }
+    }
+}
+
+.large-text {
+    position: relative;
+    overflow: hidden;
+    padding: 255px 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: var(--cs-main);
+        width: 227px;
+        height: 227px;
+        border-radius: 50%;
+        bottom: -113px;
+        left: -113px;
+        filter: blur(263px);
+    }
+    
+    .stones {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .stones.stones-mob {
+        display: none;
+    }
+
+    &__container {
+        text-align: center;
+    }
+
+    .section__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 300;
+
+        strong {
+            font-weight: 500;
+        }
+
+        .fire-img {
+            position: relative;
+            z-index: -1;       
+        }
+    }
+
+    .section__text {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 170%;
+        max-width: 743px;
+        color: var(--cs-text);
+    }
+
+    .btn-main {
+        @include btn-main;
+        @include btn-animate;
+        z-index: 11;
+        max-width: 200px;
+        margin: 0 auto;
     }
 }
