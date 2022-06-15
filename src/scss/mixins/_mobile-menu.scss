@@ -12,11 +12,14 @@
     &__container {
         width: 100%;
         margin-left: auto;
-        background-image: url('../images/mobile-bg.jpg');
+        background-color: var(--cs-body-bg);
+        background-image: url('../../images/icon/shadow-mob.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         height: 100vh;
+        padding-top: 21px;
+        padding-bottom: 81px;
     }
 
     &.menu--active {
