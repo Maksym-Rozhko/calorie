@@ -63,6 +63,39 @@
     }
 }
 
+@mixin link-more {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    color: var(--cs-text-dark);
+    @include flex-v-center;
+    transition: all ease-in-out .4s;
+
+    .circle-arrow {
+        width: 35px;
+        height: 35px;
+        background-color: var(--cs-main);
+        @include flex-all-center;
+        border-radius: 50%;
+        margin-left: 5px;
+        position: relative;
+        transition: all ease-in-out .4s;
+
+        .icon {
+            width: 12px;
+            height: 12px;
+            fill: var(--cs-text);
+        }
+    }
+
+    &:hover {
+        .circle-arrow {
+            transform: translateX(10px);
+        }
+    }
+}
+
 @mixin btn-animate {
     @include flex-all-center;
     min-width: 200px;
@@ -72,7 +105,7 @@
     .circle-arrow {
         width: 35px;
         height: 35px;
-        background-color: #FF5D39;
+        background-color: var(--cs-main);
         @include flex-all-center;
         border-radius: 50%;
         position: absolute;
@@ -83,7 +116,7 @@
         .icon {
             width: 12px;
             height: 12px;
-            color: var(--cs-text);
+            fill: var(--cs-text);
         }
     }
 
