@@ -677,3 +677,57 @@
         }
     }
 }
+
+.skills {
+    padding: 110px 0;
+    z-index: 11;
+
+    &::before {
+        content: none;
+    }
+    .section__title {
+        text-align: center;
+    }
+
+    &__items {
+        margin-top: 100px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+
+        .item {
+            max-width: 294px;
+
+            &__top {
+                @include flex-v-center;
+            }
+
+            &__image {
+                background: rgba(234, 235, 240, 0.05);
+                border-radius: 23px;
+                width: 78px;
+                height: 78px;
+                @include flex-all-center;  
+            }
+
+            &__title {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 125%;
+                letter-spacing: -0.05em;
+                color: var(--cs-text);
+                margin-left: 20px;
+            }
+
+            &__description {
+                margin-top: 30px;
+                margin-bottom: 0;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 170%;
+                color: var(--cs-grey);
+                max-width: 253px;
+            }
+        }
+    }
+}
