@@ -50,20 +50,6 @@
     }
 }
 
-@include middle-tablet {
-    .make {
-        &__container {
-            flex-direction: column;
-        }
-    }
-    .slider {
-        &__controls {
-            justify-content: flex-start;
-            margin-right: 50px;
-        }
-    }
-}
-
 @include small-desktop {
     .main-screen {
         min-height: 450px;
@@ -92,6 +78,28 @@
     }
 }
 
+@include middle-tablet {
+    .make {
+        &__container {
+            flex-direction: column;
+        }
+    }
+    .slider {
+        &__controls {
+            justify-content: flex-start;
+            margin-right: 50px;
+        }
+    }
+    .workouts {
+        .tabs {
+           &__panel {
+                max-width: 700px;
+                margin: 0 auto;
+           }
+        }
+    }
+}
+
 @include tablet {
     .large-text {
         padding: 145px 0;
@@ -111,6 +119,11 @@
         }
     }
     .make {
+        .section__title {
+            font-size: 60px;
+        }
+    }
+    .workouts {
         .section__title {
             font-size: 60px;
         }
@@ -148,6 +161,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+    }
+    .workouts {
+        .section__title {
+            font-size: 40px;
+        }
+        .tabs {
+            &__top {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            &__nav {
+                margin-top: 30px;
+            }
         }
     }
 }
@@ -306,6 +333,18 @@
             }
         }
     }
+    .workouts {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        .tabs {
+            &__nav {
+                align-self: center;
+            }
+           &__panel {
+                max-width: 335px;
+           }
+        }
+    }
 }
 
 @include small-mobile {
@@ -362,6 +401,34 @@
             .section__title-small {
                 max-width: 280px;
                 margin-bottom: 30px;
+            }
+        }
+    }
+    .workouts {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .tabs {
+            &__panel {
+                max-width: 325px;
+            }
+
+            &__nav {
+                gap: 6px;
+            }
+            &__nav-btn {
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 22px;
+                width: 98px;
+            }
+        }
+        &__item {
+            max-width: 325px;
+            height: 470px;
+        }
+        &__image {
+            .image {
+                height: 470px;
             }
         }
     }

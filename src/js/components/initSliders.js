@@ -49,3 +49,84 @@ new Swiper('.swiper.make__slider', {
     }
   },
 });
+
+new Swiper('.swiper.walking__slider', {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  speed: 500,
+
+
+  pagination: {
+    el: '.walking__pagin.swiper-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 4,
+    }
+  },
+});
+
+new Swiper('.swiper.running__slider', {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  speed: 500,
+
+
+  pagination: {
+    el: '.running__pagin.swiper-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 4,
+    }
+  },
+});
+
+new Swiper('.swiper.cycling__slider', {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  speed: 500,
+
+
+  pagination: {
+    el: '.cycling__pagin.swiper-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 4,
+    }
+  },
+});

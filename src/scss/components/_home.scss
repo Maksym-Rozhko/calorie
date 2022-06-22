@@ -67,6 +67,8 @@
 
         .fire-img-shadow {
             position: relative;
+            display: inline-block;
+            z-index: -1;
             
             .fire-img {
                 position: relative;
@@ -533,6 +535,145 @@
         .section__title-small {
             max-width: 378px;
             margin-bottom: 50px;
+        }
+    }
+}
+
+.workouts {
+    .tabs {
+        @include tabs;
+        position: relative;
+        z-index: 11;
+
+        &__top {
+            @include flex-all-sb;
+            margin-bottom: 30px
+        }
+
+        &__content {
+            overflow: hidden;
+        }
+
+        &__nav {
+            @include flex-v-center;
+            gap: 20px;
+        }
+
+        &__panel {
+            display: inherit !important;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all ease-in-out .4s ;
+        }
+
+        &__panel--active {
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+            transform: translateX(0);
+        }
+
+        &__nav-btn {
+            background: transparent;
+            font-weight: 400;
+            font-size: 16.0675px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: var(--cs-grey);
+            border: 1px solid rgba(105, 107, 119, 0.4);
+            border-radius: 40.1686px;
+            width: 106px;
+            padding: 8px;
+            transition: all ease-in-out .4s;
+        }
+
+        &__nav-btn--active {
+            background-color: transparent;
+            color: var(--cs-main);
+            border: 1px solid var(--cs-main)
+        }
+
+        &__nav-btn {
+            cursor: pointer;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        max-width: 335px;
+        height: 526px;
+
+        .icon.arrow {
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            bottom: 20px;
+            right: 20px;
+            stroke: var(--cs-text);
+            transition: all ease-in-out 0.4s;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: linear-gradient(180deg, rgba(22, 25, 37, 0) 0%, #161925 100%);
+            width: 100%;
+            height: 230px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        z-index: -1;
+
+        .image {
+            border-radius: 30px;
+        }
+    }
+
+    &__info {
+        padding: 20px;
+        position: relative;
+    }
+
+    &__title {
+        @include small-title;
+        color: var(--cs-text);
+        margin-top: 0;
+        margin-bottom: 23px;
+        max-width: 238px;
+    }
+
+    &__date {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        color: var(--cs-grey);
+    }
+
+    .swiper-pagination {
+        position: static;
+        z-index: 11;
+        margin-top: 40px;
+
+        .swiper-pagination-bullet {
+            opacity: 1;
+            background: rgba(234, 235, 240, 0.1);
+            border-radius: 2px;
+            width: 60px;
+            height: 3px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--cs-main);
         }
     }
 }
