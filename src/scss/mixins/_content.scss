@@ -186,6 +186,16 @@
     color: var(--cs-text);
 }
 
+@mixin small-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    color: var(--cs-text-dark);
+}
+
 .section {
   padding: 145px 0;
 

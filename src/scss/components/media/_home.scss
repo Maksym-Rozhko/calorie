@@ -85,6 +85,11 @@
             padding-left: max(25px, (100% - 1400px) / 2);
         }
     }
+    .cards {
+        &__container {
+            gap: 25px;
+        }
+    }
 }
 
 @include tablet {
@@ -126,6 +131,23 @@
     .make {
         .section__title {
             font-size: 40px;
+        }
+    }
+    .gps {
+        &__image {
+            &::after {
+                width: 700px;
+                height: 400px;
+                left: calc(50% - 350px);
+                top: calc(50% - 200px);
+            }
+        }
+    }
+    .cards {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
@@ -257,6 +279,33 @@
             }
         }
     }
+    .gps {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__image {
+            &::after {
+                width: 500px;
+                height: 300px;
+                left: calc(50% - 250px);
+                top: calc(50% - 150px);
+            }
+        }
+    }
+    .cards {
+        padding-top: 60px;
+        padding-bottom: 120px;
+
+        &__block {
+            max-width: 550px;
+        }
+
+        &__block--dark {
+            .image {
+                max-width: 133px;
+            }
+        }
+    }
 }
 
 @include small-mobile {
@@ -273,6 +322,47 @@
     .slider {
         .item {
             max-width: 240px;
+        }
+    }
+    .gps {
+        &__image {
+            &::after {
+                width: 400px;
+                height: 200px;
+                left: calc(50% - 200px);
+                top: calc(50% - 100px);
+            }
+        }
+    }
+    .cards {
+        &__block {
+            padding-right: 22px;
+            padding-left: 22px;
+            padding-bottom: 50px;
+        }
+    
+        &__block--orange {
+            padding-top: 192px;
+    
+            .section__title-small {
+                max-width: 280px;
+                margin-bottom: 30px;
+            }
+        }
+    
+        &__block--ocean {
+            padding-top: 188px;
+
+        }
+    
+        &__block--dark {
+            padding-top: 192px;
+
+
+            .section__title-small {
+                max-width: 280px;
+                margin-bottom: 30px;
+            }
         }
     }
 }

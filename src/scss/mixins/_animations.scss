@@ -113,6 +113,15 @@
     }
 }
 
+@keyframes increaseOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes swing {
 	15% {
 	  transform: translateX(9px);
@@ -132,4 +141,24 @@
 	100% {
 	  transform: translateX(0);
 	}
-  }
+}
+
+@keyframes decreaseScale {
+    0% {
+        transform: scale(1);
+		opacity: 1;
+    }
+    100% {
+		transform: scale(0);
+		opacity: 1;
+    }
+}
+
+@keyframes increaseScale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+		transform: scale(1);
+    }
+}
