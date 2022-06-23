@@ -8,6 +8,11 @@
             width: 100vw;
         }
     }
+    .download {
+        &__slider-container {
+            margin-right: 40px;
+        }
+    }
 }
 
 @include big-desktop {
@@ -106,6 +111,20 @@
             &__info-content {
                 margin-left: 10px;
             }
+        }
+    }
+    .download {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__slider-container {
+            margin-right: 0;
+            margin-top: 40px;
+        }
+
+        &__content {
+            max-width: inherit;
         }
     }
 }
@@ -214,6 +233,11 @@
             &__content {
                 margin-top: 40px;
             }
+        }
+    }
+    .download {
+        &__slider-container {
+            max-width: 515px;
         }
     }
 }
@@ -528,6 +552,69 @@
             }
         }
     }
+    .download {
+        padding-top: 70px;
+        padding-bottom: 94px;
+        border-bottom: 1px solid rgba(234,235,240, .1);
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: rgba(234, 235, 240, 0.1);
+            border-radius: 50%;
+            bottom: -3px;
+            z-index: -1;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+        
+        
+        &__slider-container {
+            max-width: 415px;
+
+            .slider__controls {
+                margin-right: 0;
+
+                .slider__btns {
+                    position: relative;
+                    top: 10px;
+                }
+
+                .slider__btns.swiper-button-prev {
+                    left: 0;
+                }
+    
+                .slider__btns.swiper-button-next {
+                    right: 0;
+                }
+            }
+        }
+
+        &__content {
+            .link-download {
+                display: none;
+            }
+        }
+
+        &__bottom {
+            @include flex-all-sb;
+            margin-top: 40px;
+
+            .link-download {
+                display: flex;
+            }
+        }
+    }
 }
 
 @media (max-width: 460px) {
@@ -676,9 +763,32 @@
                 max-width: 320px;
             }
         }
-        
+
         .btn-main {
             margin-top: 50px;
+        }
+    }
+    .download {
+        .wrapper.wrapper-offset {
+            padding-left: max(25px, (100% - 1400px) / 2);
+            width: 100%;
+        }
+
+        .section__text {
+            margin-top: 30px;
+        }
+
+        &__content {
+            padding-right: 35px;
+        }
+
+        &__bottom {
+            padding-right: 55px;
+        }
+
+        &__slider-container {
+            padding-left: 35px;
+            margin-top: 0;
         }
     }
 }

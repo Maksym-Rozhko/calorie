@@ -433,3 +433,26 @@ new Swiper('.swiper.exclusive-6__slider', {
       prevEl: '.slider__controls .exclusive-6__btns.swiper-button-prev',
   },
 });
+
+new Swiper('.swiper.download__slider', {
+  slidesPerView: 3,
+  spaceBetween: 12,
+  speed: 500,
+
+  navigation: {
+    nextEl: '.slider__controls .download__btns.swiper-button-next',
+    prevEl: '.slider__controls .download__btns.swiper-button-prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  },
+});
