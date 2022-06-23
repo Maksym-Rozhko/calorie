@@ -1,5 +1,5 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
+import Swiper, { Navigation, Pagination, Mousewheel } from 'swiper';
+Swiper.use([Navigation, Pagination, Mousewheel]);
 
 new Swiper('.swiper.steps-slider', {
   slidesPerView: 4,
@@ -64,9 +64,11 @@ new Swiper('.swiper.walking__slider', {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 0,
     },
     575: {
       slidesPerView: 2,
+      spaceBetween: 10,
     },
     992: {
       slidesPerView: 3,
@@ -91,9 +93,11 @@ new Swiper('.swiper.running__slider', {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 0,
     },
     575: {
       slidesPerView: 2,
+      spaceBetween: 10,
     },
     992: {
       slidesPerView: 3,
@@ -118,9 +122,11 @@ new Swiper('.swiper.cycling__slider', {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 0,
     },
     575: {
       slidesPerView: 2,
+      spaceBetween: 10,
     },
     992: {
       slidesPerView: 3,
@@ -128,5 +134,302 @@ new Swiper('.swiper.cycling__slider', {
     1280: {
       slidesPerView: 4,
     }
+  },
+});
+
+/* Basic */
+
+new Swiper('.swiper.basic-1__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .basic-1__btns.swiper-button-next',
+      prevEl: '.slider__controls .basic-1__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.basic-2__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .basic-2__btns.swiper-button-next',
+      prevEl: '.slider__controls .basic-2__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.basic-3__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .basic-3__btns.swiper-button-next',
+      prevEl: '.slider__controls .basic-3__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.basic-4__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .basic-4__btns.swiper-button-next',
+      prevEl: '.slider__controls .basic-4__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.basic-5__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .basic-5__btns.swiper-button-next',
+      prevEl: '.slider__controls .basic-5__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.basic-6__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .basic-6__btns.swiper-button-next',
+      prevEl: '.slider__controls .basic-6__btns.swiper-button-prev',
+  },
+});
+
+/* Accessories */
+new Swiper('.swiper.accessories-1__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .accessories-1__btns.swiper-button-next',
+      prevEl: '.slider__controls .accessories-1__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.accessories-2__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .accessories-2__btns.swiper-button-next',
+      prevEl: '.slider__controls .accessories-2__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.accessories-3__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .accessories-3__btns.swiper-button-next',
+      prevEl: '.slider__controls .accessories-3__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.accessories-4__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .accessories-4__btns.swiper-button-next',
+      prevEl: '.slider__controls .accessories-4__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.accessories-5__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .accessories-5__btns.swiper-button-next',
+      prevEl: '.slider__controls .accessories-5__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.accessories-6__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .accessories-6__btns.swiper-button-next',
+      prevEl: '.slider__controls .accessories-6__btns.swiper-button-prev',
+  },
+});
+
+/* Amulets */
+new Swiper('.swiper.amulets-1__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .amulets-1__btns.swiper-button-next',
+      prevEl: '.slider__controls .amulets-1__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.amulets-2__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .amulets-2__btns.swiper-button-next',
+      prevEl: '.slider__controls .amulets-2__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.amulets-3__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .amulets-3__btns.swiper-button-next',
+      prevEl: '.slider__controls .amulets-3__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.amulets-4__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .amulets-4__btns.swiper-button-next',
+      prevEl: '.slider__controls .amulets-4__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.amulets-5__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .amulets-5__btns.swiper-button-next',
+      prevEl: '.slider__controls .amulets-5__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.amulets-6__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .amulets-6__btns.swiper-button-next',
+      prevEl: '.slider__controls .amulets-6__btns.swiper-button-prev',
+  },
+});
+
+/* Exclusive */
+new Swiper('.swiper.exclusive-1__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .exclusive-1__btns.swiper-button-next',
+      prevEl: '.slider__controls .exclusive-1__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.exclusive-2__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .exclusive-2__btns.swiper-button-next',
+      prevEl: '.slider__controls .exclusive-2__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.exclusive-3__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .exclusive-3__btns.swiper-button-next',
+      prevEl: '.slider__controls .exclusive-3__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.exclusive-4__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .exclusive-4__btns.swiper-button-next',
+      prevEl: '.slider__controls .exclusive-4__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.exclusive-5__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .exclusive-5__btns.swiper-button-next',
+      prevEl: '.slider__controls .exclusive-5__btns.swiper-button-prev',
+  },
+});
+new Swiper('.swiper.exclusive-6__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .exclusive-6__btns.swiper-button-next',
+      prevEl: '.slider__controls .exclusive-6__btns.swiper-button-prev',
   },
 });

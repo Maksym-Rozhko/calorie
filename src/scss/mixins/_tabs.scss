@@ -11,3 +11,25 @@
     display: block;
   }
 }
+
+@mixin custom-tabs {
+  .custom-tabs__nav-btn--active {
+    // background-color: #ff0001;
+  }
+
+  .custom-tabs__panel {
+    display: inherit !important;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all ease-in-out .4s ;
+  }
+
+  .custom-tabs__panel--active {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    transform: translateX(0);
+  }
+}

@@ -35,7 +35,11 @@ import { enableScroll } from './functions/disable-scroll';
 
 // Реализация табов
 import GraphTabs from 'graph-tabs';
-const tabs = new GraphTabs('workouts');
+const tabsWorkouts = new GraphTabs('workouts');
+const tabsStoreBasic = new GraphTabs('storeBasic');
+const tabsStoreAccessories = new GraphTabs('storeAccessories');
+const tabsStoreAmulets = new GraphTabs('storeAmulets');
+const tabsStoreExclusive = new GraphTabs('storeExclusive');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
