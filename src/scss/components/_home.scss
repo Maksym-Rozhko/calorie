@@ -1403,3 +1403,169 @@
         }
     }
 }
+
+.sign-up {
+    padding-top: 180px;
+    padding-bottom: 115px;
+    position: relative;
+
+    .banner {
+        background-color: transparent;
+        position: absolute;
+        top: 80px;
+        padding: 0;
+    }
+
+    .section__title,
+    .section__subtitle {
+        text-align: center;
+    }
+
+    .section__title {
+        margin-top: 22px;
+        margin-bottom: 40px;
+    }
+
+    .section__subtitle {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: -0.05em;
+        color: var(--cs-text);
+    }
+
+    .form {
+        max-width: 600px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @include flex-v-center;
+        flex-direction: column;
+        position: relative;
+        z-index: 11;
+
+        &__label {
+            margin-bottom: 15px;
+            position: relative;
+            width: inherit;
+
+            .icon {
+                width: 12px;
+                height: 12px;
+                fill: var(--cs-grey);
+                position: absolute;
+                top: calc(50% - 6px);
+                left: 18px;
+            }
+        }
+
+        &__input {
+            border: 1px solid transparent;
+            background: rgba(234, 235, 240, 0.05);
+            border-radius: 30px;
+            padding: 13px 40px;
+            width: 100%;
+            transition: all ease-in-out .4s;
+            color: var(--cs-text);
+        }
+
+        &__input::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: var(--cs-grey);
+            transition: all ease-in-out .4s;
+        }
+
+        &__input:focus {
+            border: 1px solid var(--cs-main);
+            outline: transparent;
+            background-color: transparent;
+        }
+
+        &__input:focus + .icon {
+            fill: var(--cs-main);
+            animation: swing .4s ease-in-out forwards;
+        }
+
+        .custom-checkbox {
+            @include custom-checkbox;
+            margin-left: auto;
+
+            &__content {
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 15px;
+                color: var(--cs-text);
+
+                &::before {
+                    top: calc(50% - 7px);
+                    width: 14px;
+                    height: 14px;
+                    border: none;
+                    background-color: var(--cs-main);
+                    border-radius: 4px;
+                }
+
+                &::after {
+                    background-image: url('../../images/icon/checkbox.svg');
+                    top: calc(50% - 7px);
+                }
+            }
+
+            &__field:checked + .custom-checkbox__content {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__btn {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: var(--cs-text);
+            border-radius: 30px;
+            width: 100%;
+            padding: 11px;
+            position: relative;
+            z-index: 11;
+            cursor: pointer;
+            transition: all ease-in-out .4s;
+        }
+
+        &__btn.sign-up__btn {
+            border: 1px solid transparent;
+            background-color: var(--cs-main);
+            backdrop-filter: blur(60px);
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            &:hover {
+                border: 1px solid var(--cs-main);
+                background-color: transparent;
+                color: var(--cs-main);
+            }
+        }
+
+        &__btn.sign-google__btn {
+            @include flex-all-center;
+            gap: 7px;
+            border: 1px solid var(--cs-grey);
+            background: rgba(234, 235, 240, 0.05);
+
+            &:hover {
+                background: transparent;
+                color: var(--cs-main);
+
+                .image {
+                    animation: swing .4s ease-in-out forwards;
+                }
+            }
+        }
+    }
+}

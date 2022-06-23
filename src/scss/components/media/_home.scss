@@ -232,6 +232,11 @@
             margin: 20px 0;
         }
     }
+    .sign-up {
+        .section__title {
+            font-size: 60px;
+        }
+    }
 }
 
 @include middle-tablet {
@@ -339,6 +344,11 @@
         }
     }
     .ready {
+        .section__title {
+            font-size: 40px;
+        }
+    }
+    .sign-up {
         .section__title {
             font-size: 40px;
         }
@@ -707,6 +717,18 @@
                     transform: translateX(-45px);
                 }
             }
+        }
+    }
+    .sign-up {
+        .banner {
+            top: 100px;
+            
+            &__image {
+                height: 115px;
+            }
+        }
+
+        .form {
         }
     }
 }
