@@ -2519,56 +2519,59 @@
         <div class="end-elem"></div>
     </div>
 </section>
-<section class="section sign-up">
-    <div class="banner">
-        <img src="images/icon/scroll-banner-2.svg" alt="calorie" class="banner__image">
-        <img src="images/icon/scroll-banner-2.svg" alt="calorie" class="banner__image">
-    </div>
-    <div class="wrapper">
-        <span class="section__subtitle">
-            you have nothing to lose
-        </span>
-        <h2 class="section__title">
-            Start right now
-        </h2>
-        <div class="sign-up__container">
-            <form action="#" class="form">
-                <label class="form__label form__label--name">
-                    <input type="text" class="form__input" placeholder="Your name" required>
-                    <svg class="icon">
-                        <use xlink:href="images/sprite.svg#user"></use>
-                    </svg>
-                </label>
-                <label class="form__label form__label--email">
-                    <input type="email" class="form__input" placeholder="E-mail" required>
-                    <svg class="icon">
-                        <use xlink:href="images/sprite.svg#mail"></use>
-                    </svg>
-                </label>
-                <label class="form__label form__label--tel">
-                    <input type="tel" class="form__input" placeholder="Phone number" required>
-                    <svg class="icon">
-                        <use xlink:href="images/sprite.svg#phone"></use>
-                    </svg>
-                </label>
-                <label class="form__label form__label--password">
-                    <input type="password" class="form__input" placeholder="Password" required>
-                    <svg class="icon">
-                        <use xlink:href="images/sprite.svg#lock"></use>
-                    </svg>
-                </label>
-                <label class="custom-checkbox">
-                  <input type="checkbox" class="custom-checkbox__field" required>
-                  <span class="custom-checkbox__content">I agree to the privacy terms</span>
-                </label>
-                <button type="submit" class="form__btn sign-up__btn">
-                    Sign up
-                </button>
-                <button type="button" class="form__btn sign-google__btn">
-                    <img loading="lazy" src="images/icon/google.svg" class="image" width="" height="" alt="google">
-                    <span class="text">Ввойти с Google</span>
-                </button>
-            </form>
+<div class="large-bg">
+    <section class="section sign-up">
+        <div class="banner">
+            <img src="images/icon/scroll-banner-2.svg" alt="calorie" class="banner__image">
+            <img src="images/icon/scroll-banner-2.svg" alt="calorie" class="banner__image">
         </div>
-    </div>
-</section>
+        <div class="wrapper">
+            <span class="section__subtitle">
+                you have nothing to lose
+            </span>
+            <h2 class="section__title">
+                Start right now
+            </h2>
+            <div class="sign-up__container">
+                <form action="#" class="form">
+                    <label class="form__label form__label--name">
+                        <input type="text" class="form__input" placeholder="Your name" required>
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#user"></use>
+                        </svg>
+                    </label>
+                    <label class="form__label form__label--email">
+                        <input type="email" class="form__input" placeholder="E-mail" required>
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#mail"></use>
+                        </svg>
+                    </label>
+                    <label class="form__label form__label--tel">
+                        <input type="tel" class="form__input" placeholder="Phone number" required>
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#phone"></use>
+                        </svg>
+                    </label>
+                    <label class="form__label form__label--password">
+                        <input type="password" class="form__input" placeholder="Password" required>
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#lock"></use>
+                        </svg>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="custom-checkbox__field" required>
+                      <span class="custom-checkbox__content">I agree to the privacy terms</span>
+                    </label>
+                    <button type="submit" class="form__btn sign-up__btn">
+                        Sign up
+                    </button>
+                    <button type="button" class="form__btn sign-google__btn">
+                        <img loading="lazy" src="images/icon/google.svg" class="image" width="" height="" alt="google">
+                        <span class="text">Ввойти с Google</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    @include('footer.html')
+</div>
