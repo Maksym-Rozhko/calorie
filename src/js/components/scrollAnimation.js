@@ -14,3 +14,4 @@ const scrollAnimation = endElem => {
 };
 
 scrollAnimation('.gps .end-elem');
+scrollAnimation('.ready .end-elem');

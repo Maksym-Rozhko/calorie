@@ -1279,3 +1279,127 @@
         }
     }
 }
+
+.banner {
+    background-color: var(--cs-main);
+    padding: 28px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    .banner__image {
+        display: block;
+        animation: scrollRunning 10s infinite linear;
+    }
+}
+
+.ready {
+    background-image: url('../../images/home/ready-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .section__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__container {
+        @include flex-all-sb;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 125%;
+        letter-spacing: -0.05em;
+        color: var(--cs-text);
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 170%;
+        color: var(--cs-grey);
+    }
+
+    &__item:first-child,
+    &__item:last-child {
+        max-width: 253px;
+    }
+
+    &__item:first-child {
+        position: relative;
+        top: -130px;
+    }
+
+    &__item:last-child {
+        position: relative;
+        bottom: -100px;
+    }
+
+    &__item--effect {
+        position: relative;
+        z-index: 1;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 335px;
+            height: 350px;
+            z-index: -1;
+            transition: all ease-in-out .4s;
+            transition-delay: .5s;
+            opacity: 0;
+        }
+
+        &::before {
+            background-image: url('../../images/icon/red-shadow.svg');
+            transform: translate(-100px, -100px);
+        }
+
+        &::after {
+            background-image: url('../../images/icon/blue-shadow.svg');
+            transform: translate(-200px, 25px);
+        }
+
+        .image {
+            position: relative;
+            transition: all ease-in-out .4s;
+        }
+    }
+
+    &__container.animated {
+        .ready__item--effect {
+            &::before,
+            &::after {
+                opacity: 1;
+            }
+    
+            &::before {
+                transform: translate(0px, 0px);
+            }
+    
+            &::after {
+                transform: translate(-300px, 125px);
+            }
+
+            .image.girl {
+                transform: translateX(70px);
+            }
+            .image.boy {
+                transform: translateX(-70px);
+            }
+        }
+    }
+}

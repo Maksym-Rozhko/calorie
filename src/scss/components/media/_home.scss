@@ -204,6 +204,34 @@
             font-size: 60px;
         }
     }
+    .fq {
+        .section__title {
+            font-size: 60px;
+        }
+    }
+    .ready {
+        .section__title {
+            font-size: 60px;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__item:first-child {
+            position: static;
+            top: inherit;
+        }
+    
+        &__item:last-child {
+            position: static;
+            bottom: inherit;
+        }
+    
+        &__item--effect {
+            margin: 20px 0;
+        }
+    }
 }
 
 @include middle-tablet {
@@ -300,11 +328,19 @@
         }
     }
     .fq {
+        .section__title {
+            font-size: 40px;
+        }
         .faq {
             &__question-text {
                 font-size: 20px;
                 line-height: 125%;
             }
+        }
+    }
+    .ready {
+        .section__title {
+            font-size: 40px;
         }
     }
 }
@@ -632,6 +668,47 @@
         padding-top: 70px;
         padding-bottom: 110px;
     }
+    .ready {
+        padding: 70px 0;
+
+        &__item {
+            text-align: center;
+        }
+
+        &__item--effect {
+            &::before,
+            &::after {
+                width: 235px;
+                height: 250px;
+            }
+    
+            &::after {
+                transform: translate(-100px, -25px);
+            }
+
+            .image.girl {
+                max-width: 122px;
+            }
+            .image.boy {
+                max-width: 185px;
+            }
+        }
+
+        &__container.animated {
+            .ready__item--effect {
+                &::after {
+                    transform: translate(-200px, 55px);
+                }
+
+                .image.girl {
+                    transform: translateX(45px);
+                }
+                .image.boy {
+                    transform: translateX(-45px);
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 460px) {
@@ -809,5 +886,3 @@
         }
     }
 }
-
-// animation: scrollRunning 5s infinite linear;
