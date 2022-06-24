@@ -24,6 +24,7 @@ new Swiper('.swiper.steps-slider', {
     },
     1280: {
       slidesPerView: 4,
+      spaceBetween: 20,
     }
   },
 });
