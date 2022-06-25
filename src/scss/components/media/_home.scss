@@ -361,6 +361,9 @@
 }
 
 @include mobile {
+    .section {
+        overflow: hidden;
+    }
     .header {
         &__group {
             .link-download {
@@ -376,6 +379,7 @@
         height: 100vh;
         min-height: inherit;
         display: flex;
+        overflow: hidden;
 
         &__video {
             display: none;
