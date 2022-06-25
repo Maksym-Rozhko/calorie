@@ -149,7 +149,13 @@ a {
   }
 }
 
-::-webkit-scrollbar {width: 4px;height: 12px;}
+@include mobile {
+  .main {
+    overflow: hidden;
+  }
+}
+
+::-webkit-scrollbar {width: 4px;height: 4px;}
 ::-webkit-scrollbar-track-piece {background:var(--cs-grey);}
 ::-webkit-scrollbar-thumb:vertical {
   height:10px;background:var(--cs-text);-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);

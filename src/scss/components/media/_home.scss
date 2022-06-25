@@ -569,14 +569,14 @@
 
         .custom-tabs {
             &__nav {
-                overflow: scroll;
+                overflow-x: scroll;
                 padding-bottom: 10px;
             }
         }
 
         .tabs {
             &__nav {
-                overflow: scroll;
+                overflow-x: scroll;
                 padding-right: 30px;
                 padding-left: 120px;
                 padding-bottom: 10px;
@@ -618,7 +618,7 @@
     }
     .download {
         padding-top: 70px;
-        padding-bottom: 94px;
+        padding-bottom: 50px;
         border-bottom: 1px solid rgba(234,235,240, .1);
         position: relative;
 
@@ -680,7 +680,7 @@
         }
     }
     .fq {
-        padding-top: 70px;
+        padding-top: 50px;
         padding-bottom: 110px;
     }
     .ready {
@@ -728,8 +728,10 @@
         background-image: none;
     }
     .sign-up {
+        padding-top: 70px;
+        
         .banner {
-            top: 100px;
+            top: 0;
             
             &__image {
                 height: 115px;
@@ -786,6 +788,20 @@
                         top: 330px;
                     }
                 }
+            }
+        }
+    }
+    .store {
+        .tabs {
+            &__info-content {
+                margin-top: 50px;
+            }
+        }
+    }
+    .cards {
+        &__block--dark {
+            .section__title-small {
+                max-width: 240px;
             }
         }
     }
