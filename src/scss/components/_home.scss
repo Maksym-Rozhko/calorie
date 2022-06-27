@@ -951,7 +951,8 @@
         &__image-large {
             cursor: move;
             // max-width: 630px;
-            // width: 100%;
+            width: 100%;
+            text-align: center;
             // display: flex;
             // align-items: flex-end;
             // justify-content: center;
@@ -979,7 +980,7 @@
         }
 
         &__info-content {
-            max-width: 330px;
+            max-width: 340px;
             width: 100%;
             margin-left: 50px;
             cursor: none;
