@@ -6,3 +6,4 @@ import scrollAnimation from './components/scrollAnimation';
 import tabs from './components/tabs';
 import accordion from './components/accordion';
 import scrollToTop from './components/scrollToTop';
+import smoothScrollToElems from './components/smoothScrollToElems';
