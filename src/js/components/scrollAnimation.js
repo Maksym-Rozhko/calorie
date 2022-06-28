@@ -10,10 +10,11 @@ const scrollAnimation = endElem => {
         },
     );
 
-    observer.observe(elem);
+    try {
+        observer.observe(elem);
+    } catch (error) {}
 };
 
-try {
-    scrollAnimation('.gps .end-elem');
-    scrollAnimation('.ready .end-elem');
-} catch (error) {   }
+scrollAnimation('.gps .end-elem');
+scrollAnimation('.ready .end-elem');
+scrollAnimation('.demo .end-elem');
