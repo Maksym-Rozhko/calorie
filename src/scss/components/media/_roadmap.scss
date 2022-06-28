@@ -1,0 +1,73 @@
+@include small-desktop {
+    .roadmap {
+        .anchors {
+            gap: 10px;
+
+            &__link {
+                padding-top: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 30px;
+    
+                .icon-circle {
+                    width: 85px;
+                    height: 85px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .roadmap {
+        .section__title {
+            font-size: 60px;
+        }
+
+        .anchors {
+            &__link {
+                .icon.arrow {
+                    right: 10px;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@include middle-tablet {
+    .roadmap {
+        .anchors {
+            padding-bottom: 10px;
+            overflow: hidden;
+            overflow-x: auto;
+            max-width: 900px;
+
+            &__link {
+                min-width: 150px;
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .roadmap {
+        .section__title {
+            font-size: 40px;
+        }
+    }
+}
+
+@include mobile {
+    .roadmap {
+        .section__title {
+            font-size: 30px;
+
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
