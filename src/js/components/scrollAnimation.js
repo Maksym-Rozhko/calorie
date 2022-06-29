@@ -18,3 +18,5 @@ const scrollAnimation = endElem => {
 scrollAnimation('.gps .end-elem');
 scrollAnimation('.ready .end-elem');
 scrollAnimation('.demo .end-elem');
+scrollAnimation('.types .end-elem');
+scrollAnimation('.types.types-2.shop .end-elem');

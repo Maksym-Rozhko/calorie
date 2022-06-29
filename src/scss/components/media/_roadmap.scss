@@ -81,6 +81,38 @@
             .item {
                 margin: 0 auto;
             }
+
+            .item:nth-child(2) {
+                transform: translateX(-478px);
+            }
+    
+            .item:nth-child(3) {
+                transform: translateY(-414px);
+            }
+    
+            .item:last-child {
+                transform: translate(-478px, -414px);
+            }
+        }
+
+        &__container.animated {
+            .item:nth-child(3) {
+                transform: translateY(0px);
+            }
+    
+            .item:last-child {
+                transform: translate(0px);
+            }
+        }
+    }
+    .shop {
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    
+            .item {
+                margin: 0 auto;
+            }
         }
     }
 }
@@ -157,12 +189,55 @@
     
             .item {
                 min-width: 200px;
+                transform: scale(0);
+            }
+
+            .item:nth-child(2),
+            .item:nth-child(3),
+            .item:last-child {
+                transform: scale(0);
+            }
+        }
+
+        &__container.animated {
+            .item:first-child,
+            .item:nth-child(2),
+            .item:nth-child(3),
+            .item:last-child {
+                transform: scale(1);
+            }
+        }
+    }
+    .shop {
+        &__container {
+            display: flex;
+            padding-bottom: 10px;
+            overflow: hidden;
+            overflow-x: auto;
+
+            .item {
+                min-width: 250px;
+            }
+        }
+    }
+    .types-2.shop {
+        .types__container {
+            .item:nth-child(2),
+            .item:last-child {
+                transform: scale(0);
+            }
+        }
+        .types__container.animated {
+            .item:first-child,
+            .item:nth-child(2),
+            .item:last-child {
+                transform: scale(1);
             }
         }
     }
 }
 
-@include mobile {
+@include small-mobile {
     .anchor {
         .btn-groups {
             flex-direction: column;
