@@ -235,6 +235,21 @@
             }
         }
     }
+    .events {
+        &__container {
+            flex-direction: column;
+            @include flex-v-center;
+            gap: 10px;
+    
+            .group-images {
+                flex-direction: row;
+                gap: 10px;
+            }
+        }
+        &__image {
+            transform: scale(1);
+        }
+    }
 }
 
 @include small-mobile {
@@ -247,6 +262,13 @@
     .demo {
         &__list {
             margin-bottom: 30px;
+        }
+    }
+    .events {
+        &__container {
+            .group-images {
+                flex-direction: column;
+            }
         }
     }
 }
