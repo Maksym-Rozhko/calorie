@@ -269,6 +269,16 @@
     }
 }
 
+.anchor.referral {
+    .anchor__icon {
+        background-image: url('../../images/icon/referral-white.svg');
+    }
+
+    .section__title {
+        margin-bottom: 80px;
+    }
+}
+
 .demo {
     &__container {
         @include flex-all-sb;
@@ -554,5 +564,24 @@
     .anchor__title,
     .anchor__text {
         color: var(--cs-text);
+    }
+}
+
+.referral {
+    &__image {
+        border: 1px solid rgba(28, 32, 45, 0.3);
+        border-radius: 30px;
+        padding: 6px;
+        transition: all ease-in-out .4s;
+        transform: scale(0);
+
+        .image {
+            border-radius: 30px;
+        }
+    }
+    &__container.animated {
+        .referral__image {
+            transform: scale(1);
+        }
     }
 }

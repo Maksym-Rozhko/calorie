@@ -20,3 +20,4 @@ scrollAnimation('.ready .end-elem');
 scrollAnimation('.demo .end-elem');
 scrollAnimation('.types .end-elem');
 scrollAnimation('.types.types-2.shop .end-elem');
+scrollAnimation('.referral .end-elem');
