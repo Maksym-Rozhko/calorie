@@ -1,3 +1,4 @@
+import { isMobile, isTablet, isDesktop } from '../functions/check-viewport';
 import Swiper, { Navigation, Pagination, Mousewheel } from 'swiper';
 Swiper.use([Navigation, Pagination, Mousewheel]);
 
@@ -463,6 +464,12 @@ const typesHorizSlider = new Swiper('.swiper.types__slider', {
   spaceBetween: 0,
   speed: 1000,
   mousewheel: true,
+
+  mousewheel: {
+    // forceToAxis: true,
+    sensitivity: 1,
+    releaseOnEdges: true,
+  },
 });
 
 const shopHorizSlider = new Swiper('.swiper.shop__slider', {
@@ -470,6 +477,12 @@ const shopHorizSlider = new Swiper('.swiper.shop__slider', {
   spaceBetween: 0,
   speed: 1000,
   mousewheel: true,
+
+  mousewheel: {
+    // forceToAxis: true,
+    sensitivity: 1,
+    releaseOnEdges: true,
+  },
 });
 
 const referralHorizSlider = new Swiper('.swiper.referral__slider', {
@@ -477,6 +490,12 @@ const referralHorizSlider = new Swiper('.swiper.referral__slider', {
   spaceBetween: 0,
   speed: 1000,
   mousewheel: true,
+
+  mousewheel: {
+    // forceToAxis: true,
+    sensitivity: 1,
+    releaseOnEdges: true,
+  },
 });
 
 const eventsHorizSlider = new Swiper('.swiper.events__slider', {
@@ -484,12 +503,20 @@ const eventsHorizSlider = new Swiper('.swiper.events__slider', {
   spaceBetween: 0,
   speed: 1000,
   mousewheel: true,
+
+  mousewheel: {
+    // forceToAxis: true,
+    sensitivity: 1,
+    releaseOnEdges: true,
+  },
 });
 
-function updateParentSliderIndex(parent) {
+function updateParentSliderIndex(parent, slider) {
   try {
-    parent.children[0].children[0].classList.contains('swiper-slide-active') ? parent.classList.remove('z-index') : false;
-    parent.children[0].lastElementChild.classList.contains('swiper-slide-active') ? parent.classList.remove('z-index') : false;
+    // parent.children[0].children[0].classList.contains('swiper-slide-active') ? parent.classList.remove('z-index') : false;
+    // parent.children[0].lastElementChild.classList.contains('swiper-slide-active') ? parent.classList.remove('z-index') : false;
+    // parent.children[0].children[0].classList.contains('swiper-slide-active') ? slider.mousewheel.disable() : slider.mousewheel.enable();
+    // parent.children[0].lastElementChild.classList.contains('swiper-slide-active') ? slider.mousewheeldisable() : slider.mousewheel.enable();
   } catch (error) {}
 }
 
@@ -498,7 +525,7 @@ typesHorizSlider.on('slideChange', function () {
 
   typesHorizSlider.updateSlidesClasses();
   setTimeout(() => {
-    updateParentSliderIndex(parent);
+    updateParentSliderIndex(parent, typesHorizSlider);
   }, 1000);
 });
 
@@ -507,7 +534,7 @@ shopHorizSlider.on('slideChange', function () {
 
   shopHorizSlider.updateSlidesClasses();
   setTimeout(() => {
-    updateParentSliderIndex(parent);
+    updateParentSliderIndex(parent, shopHorizSlider);
   }, 1000);
 });
 
@@ -516,7 +543,7 @@ referralHorizSlider.on('slideChange', function () {
 
   referralHorizSlider.updateSlidesClasses();
   setTimeout(() => {
-    updateParentSliderIndex(parent);
+    updateParentSliderIndex(parent, referralHorizSlider);
   }, 1000);
 });
 
@@ -525,6 +552,13 @@ eventsHorizSlider.on('slideChange', function () {
 
   eventsHorizSlider.updateSlidesClasses();
   setTimeout(() => {
-    updateParentSliderIndex(parent);
+    updateParentSliderIndex(parent, eventsHorizSlider);
   }, 1000);
 });
+
+if (isMobile()) {
+	typesHorizSlider.destroy();
+	shopHorizSlider.destroy();
+	referralHorizSlider.destroy();
+	eventsHorizSlider.destroy();
+}
