@@ -228,10 +228,6 @@
             border-radius: 50%;
             margin: 0;
 
-            .swiper-button-prev {
-                transform: rotate(180deg);
-            }
-
             &::after {
                 content: none;
             }
@@ -241,6 +237,10 @@
                 height: 12px;
                 fill: var(--cs-text);
             }
+        }
+
+        &__btns.swiper-button-prev {
+            transform: rotate(180deg);
         }
     }
 
