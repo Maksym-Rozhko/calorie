@@ -1,0 +1,132 @@
+@include big-desktop {
+    .activities {
+        .make {
+            .item {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+    
+                &__content {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+@include small-desktop {
+    .activities {
+        .make {
+            .item {
+                &__title {
+                    font-size: 18px;
+                    margin-bottom: 12px;
+                }
+                &__points {
+                    margin-top: 20px;
+                    margin-bottom: 5px;
+                }
+                &__content {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .activities {
+        .section {
+            &__title {
+                font-size: 60px;
+            }
+            &__subtitle {
+                font-size: 18px;
+            }
+        }
+        .make {
+            &__try-wrap {
+                &::after {
+                    width: 500px;
+                    left: calc(50% - 250px);
+                }
+            }
+            .item {
+                &__images {
+                    min-width: 450px;
+                }
+            }
+        }
+    }
+}
+
+@include middle-tablet {
+    .activities {
+        .make {
+            .item {
+                flex-direction: column;
+                max-width: 638px;
+                margin-left: auto;
+                margin-right: auto;
+
+                &:nth-child(even) {
+                    flex-direction: column;
+                }
+
+                &__content {
+                    margin: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .activities {
+        .section {
+            &__title {
+                font-size: 40px;
+            }
+            &__subtitle {
+                font-size: 16px;
+            }
+        }
+        .make {
+            &__title {
+                font-size: 22px;
+            }
+            &__try-wrap {
+                &::after {
+                    width: 250px;
+                    left: calc(50% - 125px);
+                }
+            }
+            .item {
+                &__images {
+                    min-width: inherit;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .activities {
+        .section {
+            &__title {
+                font-size: 30px;
+            }
+        }
+        .make {
+            &__try-wrap {
+                margin-bottom: 35px;
+
+                &::after {
+                    width: 200px;
+                    left: calc(50% - 100px);
+                }
+            }
+        }
+    }
+}
