@@ -57,6 +57,32 @@
                 }
             }
         }
+        .statistic {
+            &__content {
+                max-width: 430px;
+                margin-top: 0;
+            }
+
+            &__container {
+                align-items: center;
+                flex-direction: column;
+                gap: 50px;
+            }
+    
+            .section__text.section__text--mb {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: -0.03em;
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+    
+            .btn-groups {
+                margin-top: 30px;
+            }
+        }
     }
 }
 
@@ -108,6 +134,20 @@
                 }
             }
         }
+        .statistic {
+            &__container {
+                gap: 25px;
+            }
+
+            &__images {
+                .images-group {
+                    display: none;
+                }
+                .image {
+                    display: block;
+                }
+            }
+        }
     }
 }
 
@@ -125,6 +165,20 @@
                 &::after {
                     width: 200px;
                     left: calc(50% - 100px);
+                }
+            }
+        }
+        .statistic {
+            &__labels {
+                margin: 10px 0;
+                flex-wrap: wrap;
+            }
+            .btn-groups {
+                align-items: center;
+                flex-direction: column-reverse;
+
+                .sign-up {
+                    max-width: inherit;
                 }
             }
         }

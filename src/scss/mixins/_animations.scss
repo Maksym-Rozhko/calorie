@@ -171,3 +171,57 @@
         transform: translate(-100%, 0)
     }
 }
+
+@keyframes statsMoveRightElem {
+	0% {
+		z-index: -1;
+		right: 72px;
+		bottom: 241px;
+		opacity: 0;
+	}
+	50% {
+		right: -190px;
+		bottom: 241px;
+		// z-index: 1;
+	}
+	100% {
+		bottom: 241px;
+		right: -64px;
+		z-index: 1;
+		opacity: 1;
+	}
+}
+
+@keyframes statsMoveLeftElem {
+	0% {
+		z-index: -1;
+		left: -40px;
+		bottom: 280px;
+		opacity: 0;
+		transform: rotate(-90deg);
+	}
+	50% {
+		left: -235px;
+		bottom: 280px;
+		// z-index: 1;
+	}
+	100% {
+		bottom: 370px;
+		left: -115px;
+		z-index: 1;
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+}
+
+// /* The typing effect */
+// @keyframes typing {
+// 	from { width: 0; white-space: nowrap;}
+// 	to { width: 100%; max-width: 85px; white-space: wrap;}
+// }
+  
+// /* The typewriter cursor effect */
+// @keyframes blink-caret {
+// 	from, to { border-color: transparent }
+// 	50% { border-color: var(--cs-main) }
+// }
