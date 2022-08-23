@@ -40,6 +40,7 @@ scrollAnimation('.types.types-2.shop .end-elem');
 scrollAnimation('.referral .end-elem');
 scrollAnimation('.events .end-elem');
 scrollAnimation('.statistic .end-elem');
+scrollAnimation('.coin .end-elem');
 // scrollSliderIndex('#types .scroll-elem');
 // scrollSliderIndex('#shop .scroll-elem');
 // scrollSliderIndex('#referral .scroll-elem');

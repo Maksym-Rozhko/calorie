@@ -38,6 +38,73 @@
                 margin-bottom: 20px;
             }
         }
+        .coin {
+            &__container {
+                .coin__device {
+                    .img-arrow {
+                        transform: translateX(-250px) rotateX(180deg) rotate(50deg);
+                        top: 150px;
+                        bottom: inherit;
+                    }
+                }
+            }
+            &__container.animated {
+                .coin__device {
+                    .img-arrow {
+                        transform: translateX(-50px) rotateX(180deg) rotate(50deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include middle-tablet {
+    .nftshop {
+        .coin {
+            &__title {
+                margin-bottom: 20px;
+            }
+            &__text {
+                margin-bottom: 20px;
+            }
+            &__container {
+                flex-direction: column-reverse;
+                gap: 30px;
+                
+                .coin__device {
+                    .img-device {
+                        display: block;
+                    }
+                }
+                .coin__coins {
+                    .image {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    .img-md {
+                        left: 10px;
+                        top: 76px;
+                    }
+                    .img-lg {
+                        left: 0;
+                        top: 220px;
+                    }
+                    .img-tr {
+                        left: 105px;
+                        top: 135px;
+                    }
+                }
+            }
+            &__container.animated {
+                .coin__device {
+                    .img-arrow {
+                        transform: translateX(380px) rotate(-68deg);
+                        top: 30px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -47,6 +114,9 @@
             &__images {
                 width: 100%;
             }
+        }
+        .coin {
+            padding-top: 70px;
         }
     }
 }
@@ -76,6 +146,79 @@
                 font-size: 16px;
             }
         }
+        .coin {
+            &__title {
+                margin-bottom: 10px;
+            }
+            &__container {
+                gap: 10px;
+                
+                .coin__device {
+                    .img-device {
+                        max-width: 300px;
+                    }
+                    .img-label {
+                        top: 65px;
+                        left: 80px;
+                        transform: scale(.5);
+                    }
+                    .img-arrow {
+                        transform: translateX(110px) rotate(-68deg);
+                        top: 50px;
+                    }
+                }
+                .coin__coins {
+                    height: 340px;
+                    max-width: 280px;
+
+                    .img-sm {
+                        max-width: 40px;
+                    }
+                    .img-md {
+                        max-width: 70px;
+                        left: 20px;
+                        top: 56px;
+                    }
+                    .img-lg,
+                    .img-tr {
+                        max-width: 170px;
+                    }
+                    .img-lg {
+                        top: 150px;
+                    }
+                    .img-tr {
+                        top: 100px;
+                        left: 85px;
+                    }
+                }
+            }
+            &__container.animated {
+                .coin__device {
+                    .img-label {
+                        top: 120px;
+                        left: 130px;
+                        transform: scale(.7);
+                    }
+                    .img-arrow {
+                        transform: translateX(210px) rotate(-68deg);
+                        top: 0;
+                    }
+                }
+                .coin__coins {
+                    .img-md {
+                        left: 20px;
+                        top: 56px;
+                    }
+                    .img-lg {
+                        top: 150px;
+                    }
+                    .img-tr {
+                        top: 100px;
+                        left: 85px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -85,6 +228,23 @@
             &__images.animated {
                 .images.images-pos {
                     transform: translate(55px, 55px);
+                }
+            }
+        }
+        .coin {
+            &__title {
+                font-size: 24px;
+            }
+            &__container.animated {
+                .coin__device {
+                    .img-label {
+                        top: 100px;
+                        left: 110px;
+                        transform: scale(.6);
+                    }
+                    .img-arrow {
+                        transform: translateX(180px) rotate(-68deg);
+                    }
                 }
             }
         }
