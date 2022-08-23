@@ -20,9 +20,7 @@
         }
 
         &__container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flex-all-sb;
         }
 
         &__content {
@@ -118,9 +116,7 @@
         &__container {
             max-width: 1100px;
             margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flex-all-sb;
 
             .coin__device {
                 position: relative;
@@ -210,6 +206,98 @@
                 .img-tr {
                     left: 105px;
                     top: 135px;
+                }
+            }
+        }
+    }
+    .how-to-buy {
+        padding-top: 120px;
+        padding-bottom: 0;
+        background: linear-gradient(274.23deg, #FFED52 -26.25%, #FFB23F -0.82%, #FF5D39 56.57%);
+        position: relative;
+
+        &__title {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: -0.05em;
+            color: var(--cs-text);
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        &__steps {
+            @include flex-all-sb;
+
+            .step {
+                @include flex-v-center;
+                flex-direction: column;
+                background: rgba(234, 235, 240, 0.05);
+                backdrop-filter: blur(60px);
+                border-radius: 20px;
+                padding: 25px 5px;
+                position: relative;
+                max-width: 282px;
+                width: 100%;
+
+                &__number {
+                    @include flex-all-center;
+                    background: rgba(234, 235, 240, 0.1);
+                    width: 26px;
+                    height: 26px;
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 100%;
+                    text-align: center;
+                    color: var(--cs-white);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -13px;
+                }
+
+                &__descript {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 170%;
+                    text-align: center;
+                    color: var(--cs-white);
+                }
+            }
+            .step:not(:last-child)::before {
+                content: "";
+                position: absolute;
+                border-bottom: 2px dashed #EAEBF0;
+                width: 100px;
+                height: 1px;
+                top: calc(50% - 1px);
+                right: -100px;
+            }
+        }
+
+        &__view {
+            @include flex-all-sb;
+            gap: 10px;
+            position: relative;
+            bottom: -70px;
+
+            .device {
+                position: relative;
+
+                .img-pos {
+                    position: absolute;
+                    left: 2px;
+                    bottom: 8px;
+                }
+            }
+        }
+
+        &__container.animated {
+            .how-to-buy__view {
+                .device {
+                    .preloader--sm {
+                        opacity: 0;
+                    }
                 }
             }
         }

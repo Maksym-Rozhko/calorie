@@ -15,6 +15,33 @@
                 margin-right: 50px;
             }
         }
+        .how-to-buy {
+            &__steps {
+                .step {
+                    max-width: 200px;
+                }
+                .step:not(:last-child)::before {
+                    width: 140px;
+                    right: -140px;
+                }
+            }
+            &__view {
+                gap: 30px;
+                justify-content: center;
+    
+                .device {
+                    .image {
+                        max-width: 200px;
+                    }
+                    .img-pos {
+                        max-width: 196px;
+                    }
+                    .preloader--sm {
+                        top: 20px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -105,6 +132,46 @@
                 }
             }
         }
+        .how-to-buy {
+            &__steps {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+
+                .step:not(:last-child)::before {
+                    content: none;
+                }
+            }
+            &__view {
+                gap: 10px;
+                position: static;
+                margin-top: 30px;
+
+                .device {
+                    .image {
+                        height: 300px;
+                    }
+                    .img-pos {
+                        height: 280px;
+                        transition: all ease-in-out 1s;
+                        min-width: 128px;
+                        height: 0;
+                    }
+                    .preloader--sm {
+                        display: none;
+                    }
+                }
+            }
+            &__container.animated {
+                .how-to-buy__view {
+                    .device {
+                        .img-pos {
+                            height: 92%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -116,6 +183,9 @@
             }
         }
         .coin {
+            padding-top: 70px;
+        }
+        .how-to-buy {
             padding-top: 70px;
         }
     }
@@ -215,6 +285,41 @@
                     .img-tr {
                         top: 100px;
                         left: 85px;
+                    }
+                }
+            }
+        }
+        .how-to-buy {
+            &__title {
+                font-size: 24px;
+            }
+            &__steps {
+                flex-direction: column;
+                gap: 30px;
+
+                .step:not(:last-child)::before {
+                    content: "";
+                    width: 40px;
+                    transform: rotate(90deg);
+                    right: calc(50% - 20px);
+                    top: inherit;
+                    bottom: -20px;
+                }
+            }
+            &__view {
+                gap: 10px;
+                max-width: 300px;
+                margin-right: auto;
+                margin-left: auto;
+                flex-wrap: wrap;
+
+                .device {
+                    .image {
+                        height: 250px;
+                    }
+                    .img-pos {
+                        min-width: 106px;
+                        height: 0;
                     }
                 }
             }
