@@ -1,0 +1,92 @@
+@include big-desktop {
+    .nftshop {
+        .nft {
+            &__content {
+                margin-right: 150px;
+            }
+        }
+    }
+}
+
+@include small-desktop {
+    .nftshop {
+        .nft {
+            &__content {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .nftshop {
+        .nft {
+            &__container {
+                flex-direction: column;
+                gap: 40px;
+            }
+            &__content {
+                margin-right: 0;
+            }
+        }
+        .section {
+            &__title,
+            &__subtitle {
+                text-align: center;
+            }
+            &__title {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .nftshop {
+        .nft {
+            &__images {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .nftshop {
+        .nft {
+            &__images.animated {
+                .images.images-pos {
+                    transform: translate(100px, 55px);
+                }
+
+                &:hover {
+                    .images.images-pos {
+                        z-index: 11;
+                    }
+                }
+            }
+            .btn-groups {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .section {
+            &__subtitle {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@include small-mobile {
+    .nftshop {
+        .nft {
+            &__images.animated {
+                .images.images-pos {
+                    transform: translate(55px, 55px);
+                }
+            }
+        }
+    }
+}

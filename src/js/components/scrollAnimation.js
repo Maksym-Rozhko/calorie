@@ -44,3 +44,19 @@ scrollAnimation('.statistic .end-elem');
 // scrollSliderIndex('#shop .scroll-elem');
 // scrollSliderIndex('#referral .scroll-elem');
 // scrollSliderIndex('#events .scroll-elem');
+
+const timeoutAnimation = parentElem => {
+    const parent = document.querySelector(parentElem);
+
+    if (parent) {
+        const animated = setTimeout(() => {
+            parent.classList.add('animated');
+        }, 6500);
+
+        if (parent.classList.contains('animated')) {
+            clearTimeout(animated);
+        }
+    }
+};
+
+timeoutAnimation('.nft .nft__images');
