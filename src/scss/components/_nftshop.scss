@@ -401,4 +401,79 @@
             }
         }
     }
+    .exclusive {
+        .swiper {
+            z-index: 11;
+
+            .slider__controls {
+                display: none;
+
+                .slider__btns {
+                    position: static;
+                    color: var(--cs-grey);
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid var(--cs-grey);
+                    border-radius: 50%;
+                    z-index: 11;
+                    transition: all ease-in-out .4s;
+
+                    &::after {
+                        content: none;
+                    }
+
+                    .icon {
+                        width: 12px;
+                        height: 12px;
+                        fill: var(--cs-grey);
+                    }
+
+                    &:hover {
+                        color: var(--cs-main);
+                        border: 1px solid var(--cs-main);
+
+                        .icon {
+                            fill: var(--cs-main);
+                        }
+                    }
+                }
+
+                .slider__btns.swiper-button-prev {
+                    .icon {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        .tabs__info-content {
+            margin-left: 0;
+        }
+        .tabs__title {
+            margin-top: 115px;
+        }
+        .tab__info-label {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: -.03em;
+            border-radius: 40px;
+            padding: 7px;
+            width: 136px;
+            background-color: transparent;
+            color: var(--cs-main);
+            border: 1px solid var(--cs-main);
+        }
+        .item-icons {
+            @include flex-all-center;
+            flex-direction: column;
+            gap: 15px;
+
+            &__image {
+                width: 127px;
+                height: 127px;
+                cursor: default;
+            }
+        }
+    }
 }

@@ -435,6 +435,18 @@ new Swiper('.swiper.exclusive-6__slider', {
       prevEl: '.slider__controls .exclusive-6__btns.swiper-button-prev',
   },
 });
+new Swiper('.swiper.exclusive__slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  speed: 500,
+  mousewheel: true,
+
+  navigation: {
+      nextEl: '.slider__controls .exclusive__btns.swiper-button-next',
+      prevEl: '.slider__controls .exclusive__btns.swiper-button-prev',
+  },
+});
 
 new Swiper('.swiper.download__slider', {
   slidesPerView: 3,
