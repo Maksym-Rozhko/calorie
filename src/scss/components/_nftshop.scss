@@ -476,4 +476,94 @@
             }
         }
     }
+    .convert {
+        padding-top: 120px;
+        padding-bottom: 0;
+        background-image: url('../../images/nftshop/convert/convert-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &__title {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: -0.05em;
+            color: var(--cs-text);
+            margin-top: 0;
+            margin-bottom: 60px;
+        }
+
+        &__container {
+            @include flex-all-sb;
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .image-burn {
+            .image {
+                display: block;
+            }
+            .img-pos {
+                left: 50px;
+                top: 255px;
+                transform: scale(0);
+            }
+        }
+
+        .image-coins {
+            .image {
+                display: block;
+            }
+            .img-pos {
+                right: 0;
+                top: 185px;
+                transform: scale(0);
+            }
+        }
+
+        .image.img-pos {
+            position: absolute;      
+            transition: all ease-in-out .4s; 
+        }
+
+        .image.img-line {
+            left: 50%;
+            transform: translate(-50%);
+            width: 0;
+            height: 290px;
+            top: 200px;
+            transition: all ease-in-out .8s;
+        }
+        .image.img-btn {
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 214px;
+            opacity: 0;
+        }
+
+        &__container.animated {
+            .image-burn {
+                .img-pos {
+                    transform: scale(1);
+                    left: -51px;
+                }
+            }
+            .image-coins {
+                .img-pos {
+                    transform: scale(1);
+                    right: -57px;
+                    top: 245px;
+                }
+            }
+            .image.img-line {
+                width: 90%;
+            }
+            .image.img-btn {
+                opacity: 1;
+            }
+        }
+    }
 }

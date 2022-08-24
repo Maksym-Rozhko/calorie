@@ -107,6 +107,25 @@
                 }
             }
         }
+        .convert {
+            &__container.animated {
+                .image-burn {
+                    .img-pos {
+                        transform: scale(0.7);
+                    }
+                }
+                .image-coins {
+                    .img-pos {
+                        transform: scale(0.7);
+                    }
+                }
+                .image.img-line {
+                    height: 230px;
+                    width: 81%;
+                    top: 230px;
+                }
+            }
+        }
     }
 }
 
@@ -209,6 +228,62 @@
                 padding-bottom: 0;
             }
         }
+        .convert {
+            &__container {
+                flex-direction: column;
+                max-width: 450px;
+                gap: 150px;
+
+                .image-burn {
+                    .img-pos {
+                        transform: scale(1);
+                        left: -25px;
+                    }
+                }
+                .image-coins {
+                    .img-pos {
+                        top: inherit;
+                        bottom: 210px;
+                        right: -25px;
+                    }
+                }
+                .image.img-btn {
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(90deg);
+                    opacity: 1;
+                }
+                .image.img-line {
+                    height: 180px;
+                    transform: translate(-50%, -50%) rotate(90deg);
+                    width: 100%;
+                    left: 50%;
+                    top: 51%;
+                }
+            }
+            &__container.animated {
+                .image-burn {
+                    .img-pos {
+                        transform: scale(1);
+                        left: -25px;
+                    }
+                }
+                .image-coins {
+                    .img-pos {
+                        transform: scale(1);
+                        top: inherit;
+                        bottom: 210px;
+                        right: -25px;
+                    }
+                }
+                .image.img-line {
+                    height: 180px;
+                    transform: translate(-50%, -50%) rotate(90deg);
+                    width: 100%;
+                    left: 50%;
+                    top: 51%;
+                }
+            }
+        }
     }
 }
 
@@ -268,6 +343,9 @@
                 width: 100px;
                 height: 100px;
             }
+        }
+        .convert {
+            padding-top: 70px;
         }
     }
 }
@@ -486,6 +564,11 @@
                 }
             }
         }
+        .convert {
+            &__title {
+                font-size: 24px;
+            }
+        }
     }
 }
 
@@ -523,6 +606,25 @@
             }
             .item-icons {
                 flex-wrap: wrap;
+            }
+        }
+        .convert {
+            .image-burn {
+                .img-pos {
+                    transform: scale(.7);
+                }
+            }
+            &__container.animated {
+                .image-burn {
+                    .img-pos {
+                        transform: scale(.7);
+                    }
+                }
+                .image-coins {
+                    .img-pos {
+                        transform: scale(.7);
+                    }
+                }
             }
         }
     }
