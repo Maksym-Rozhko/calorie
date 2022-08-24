@@ -44,6 +44,7 @@ scrollAnimation('.coin .end-elem');
 scrollAnimation('.how-to-buy .end-elem');
 scrollAnimation('.categories .end-elem');
 scrollAnimation('.convert .end-elem');
+scrollAnimation('.market .end-elem');
 // scrollSliderIndex('#types .scroll-elem');
 // scrollSliderIndex('#shop .scroll-elem');
 // scrollSliderIndex('#referral .scroll-elem');
@@ -55,7 +56,7 @@ const timeoutAnimation = parentElem => {
     if (parent) {
         const animated = setTimeout(() => {
             parent.classList.add('animated');
-        }, 6500);
+        }, 1500);
 
         if (parent.classList.contains('animated')) {
             clearTimeout(animated);

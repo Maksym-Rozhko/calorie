@@ -13,6 +13,30 @@
                 }
             }
         }
+        .market {
+            .images-animation {
+                .image-line-top {
+                    top: -45px;
+                }
+                .image-line-bottom {
+                    bottom: -50px;
+                }
+                .image-selected {
+                    top: -30px;
+                    left: 10px;
+                }
+            }
+            &__container.animated {
+                .images-animation {
+                    .image-line-top {
+                        width: 53%;
+                    }
+                    .image-selected {
+                        transform: scale(.7);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -64,6 +88,18 @@
                 flex-wrap: wrap;
                 max-width: 600px;
                 margin: 0 auto;
+            }
+        }
+        .market {
+            .images-animation {
+                .image-line-top {
+                    top: -20px;
+                    left: 350px;
+                }
+                .image-line-bottom {
+                    bottom: 0px;
+                    right: 200px;
+                }
             }
         }
     }
@@ -123,6 +159,42 @@
                     height: 230px;
                     width: 81%;
                     top: 230px;
+                }
+            }
+        }
+        .market {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            &__title {
+                margin-bottom: 80px;
+            }
+            
+            .steps {
+                .step.step-first {
+                    margin-left: 80px;
+                    margin-bottom: 50px;
+                }
+                .step.step-second {
+                    margin-right: 0;
+                }
+                .step.step-third {
+                    margin-left: 0;
+                }
+            }
+
+            .images-animation {
+                .image-selected {
+                    top: -90px;
+                    left: -50px;
+                }
+                .image-line-top {
+                    left: 200px;
+                    top: 0;
+                }
+                .image-line-bottom {
+                    bottom: 80px;
+                    right: 100px;
                 }
             }
         }
@@ -347,6 +419,34 @@
         .convert {
             padding-top: 70px;
         }
+        .market {
+            padding-top: 70px;
+            padding-bottom: 70px;
+
+            &__title {
+                margin-bottom: 40px;
+            }
+            
+            .images-animation {
+                .image-items {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .image-selected {
+                    top: 50%;
+                    transform: translateY(-60%) scale(0);
+                }
+            }
+
+            &__container.animated {
+                .images-animation {
+                    .image-selected {
+                        top: 50%;
+                        transform: translateY(-60%) scale(0.7);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -567,6 +667,35 @@
         .convert {
             &__title {
                 font-size: 24px;
+            }
+        }
+        .market {
+            &__title {
+                font-size: 24px;
+            }
+
+            .steps {
+                .step.step-first {
+                    margin-left: 0;
+                }
+                .step.step-second {
+                    max-width: 250px;
+                }
+                .step.step-third {
+                    padding: 25px 0;
+                    max-width: 350px;
+
+                    .step__descript {
+                        max-width: 300px;
+                    }
+                }
+            }
+            
+            .images-animation {
+                .image-line-top,
+                .image-line-bottom {
+                    display: none;
+                }
             }
         }
     }
