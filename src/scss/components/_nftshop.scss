@@ -302,4 +302,40 @@
             }
         }
     }
+
+    .upgrade {
+        padding-top: 250px;
+        padding-bottom: 130px;
+
+        &__title {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: -0.05em;
+            color: var(--cs-text);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 170%;
+            text-align: center;
+            color: var(--cs-white);
+            max-width: 620px;
+            margin-top: 40px;
+            margin-bottom: 87px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__images {
+            position: relative;
+            left: 100px;
+            padding-bottom: 120px;
+            border-bottom: 1px solid #222637;
+        }
+    }
 }
