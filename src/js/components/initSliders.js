@@ -475,54 +475,53 @@ const typesHorizSlider = new Swiper('.swiper.types__slider', {
   slidesPerView: 1,
   spaceBetween: 0,
   speed: 1000,
-  mousewheel: true,
+  // mousewheel: true,
 
-  mousewheel: {
-    // forceToAxis: true,
-    sensitivity: 1,
-    releaseOnEdges: true,
-  },
+  // mousewheel: {
+  //   // forceToAxis: true,
+  //   sensitivity: 1,
+  //   releaseOnEdges: true,
+  // },
 });
 
 const shopHorizSlider = new Swiper('.swiper.shop__slider', {
   slidesPerView: 1,
   spaceBetween: 0,
   speed: 1000,
-  mousewheel: true,
+  // mousewheel: true,
 
-  mousewheel: {
-    // forceToAxis: true,
-    sensitivity: 1,
-    releaseOnEdges: true,
-  },
+  // mousewheel: {
+  //   // forceToAxis: true,
+  //   sensitivity: 1,
+  //   releaseOnEdges: true,
+  // },
 });
 
 const referralHorizSlider = new Swiper('.swiper.referral__slider', {
   slidesPerView: 1,
   spaceBetween: 0,
   speed: 1000,
-  mousewheel: true,
+  // mousewheel: true,
 
-  mousewheel: {
-    // forceToAxis: true,
-    sensitivity: 1,
-    releaseOnEdges: true,
-  },
+  // mousewheel: {
+  //   // forceToAxis: true,
+  //   sensitivity: 1,
+  //   releaseOnEdges: true,
+  // },
 });
 
 const eventsHorizSlider = new Swiper('.swiper.events__slider', {
   slidesPerView: 1,
   spaceBetween: 0,
   speed: 1000,
-  mousewheel: true,
+  // mousewheel: true,
 
-  mousewheel: {
-    // forceToAxis: true,
-    sensitivity: 1,
-    releaseOnEdges: true,
-  },
+  // mousewheel: {
+  //   // forceToAxis: true,
+  //   sensitivity: 1,
+  //   releaseOnEdges: true,
+  // },
 });
-
 // function updateParentSliderIndex(parent, slider) {
 //   try {
 //     // parent.children[0].children[0].classList.contains('swiper-slide-active') ? parent.classList.remove('z-index') : false;
@@ -532,32 +531,32 @@ const eventsHorizSlider = new Swiper('.swiper.events__slider', {
 //   } catch (error) {}
 // }
 
-typesHorizSlider.on('slideChange', function () {
-  // const parent = document.querySelector('.types__slider');
+// typesHorizSlider.on('slideChange', function () {
+//   // const parent = document.querySelector('.types__slider');
 
-  typesHorizSlider.updateSlidesClasses();
-  // setTimeout(() => {
-  //   updateParentSliderIndex(parent, typesHorizSlider);
-  // }, 1000);
-});
+//   typesHorizSlider.updateSlidesClasses();
+//   // setTimeout(() => {
+//   //   updateParentSliderIndex(parent, typesHorizSlider);
+//   // }, 1000);
+// });
 
-shopHorizSlider.on('slideChange', function () {
-  shopHorizSlider.updateSlidesClasses();
-});
+// shopHorizSlider.on('slideChange', function () {
+//   shopHorizSlider.updateSlidesClasses();
+// });
 
-referralHorizSlider.on('slideChange', function () {
-  referralHorizSlider.updateSlidesClasses();
-});
+// referralHorizSlider.on('slideChange', function () {
+//   referralHorizSlider.updateSlidesClasses();
+// });
 
-eventsHorizSlider.on('slideChange', function () {
-  eventsHorizSlider.updateSlidesClasses();
-});
+// eventsHorizSlider.on('slideChange', function () {
+//   eventsHorizSlider.updateSlidesClasses();
+// });
 
-if (isMobile()) {
-  try {
-    typesHorizSlider.destroy();
-    shopHorizSlider.destroy();
-    referralHorizSlider.destroy();
-    eventsHorizSlider.destroy();
-  } catch (error) {}
-}
+// if (isMobile()) {
+//   try {
+//     typesHorizSlider.destroy();
+//     shopHorizSlider.destroy();
+//     referralHorizSlider.destroy();
+//     eventsHorizSlider.destroy();
+//   } catch (error) {}
+// }
