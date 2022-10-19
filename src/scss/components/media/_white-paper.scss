@@ -1,0 +1,7 @@
+@include mobile {
+    .white-paper {
+        .content-block__text {
+            flex-direction: column;
+        }
+    }
+}
