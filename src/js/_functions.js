@@ -40,6 +40,7 @@ const tabsStoreBasic = new GraphTabs('storeBasic');
 const tabsStoreAccessories = new GraphTabs('storeAccessories');
 const tabsStoreAmulets = new GraphTabs('storeAmulets');
 const tabsStoreExclusive = new GraphTabs('storeExclusive');
+const tabsRoadmapStages = new GraphTabs('stages');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';

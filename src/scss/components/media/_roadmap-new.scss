@@ -1,0 +1,171 @@
+@include large-desktop {
+    .roadmap {
+        .stages {
+            .stage-slider {    
+                &__btns.swiper-button-prev {
+                    left: -30px;
+                }
+                &__btns.swiper-button-next {
+                    right: -30px;
+                }
+            }
+        }
+    }
+}
+
+@include big-desktop {
+    .roadmap {
+        .stages {
+            .stage-slider {    
+                &__btns.swiper-button-prev {
+                    left: -15px;
+                }
+                &__btns.swiper-button-next {
+                    right: -15px;
+                }
+            }
+        }
+    }
+
+}
+
+@include small-desktop {
+    .roadmap {
+        .stages {
+            padding: 100px 0;
+
+            .stage-slider {    
+                &__text {
+                    font-size: 20px;
+                    margin-right: 30px;
+                }
+                .image {
+                    max-width: 524px;
+                }
+                .content {
+                    margin-right: 30px;
+
+                    .title {
+                        margin-bottom: 20px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .roadmap {
+        .stages {
+            .stage-slider {   
+                &__text {
+                    font-size: 18px;
+                    margin-left: 0;
+                }
+                .image {
+                    max-width: 400px;
+                }
+                .content {
+                    margin-top: 60px;
+                    margin-left: 0;
+
+                    .title {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .roadmap {
+        .stages {
+            .stage-slider {   
+                &__btns.swiper-button-prev {
+                    left: -10px;
+                }
+                &__btns.swiper-button-next {
+                    right: -10px;
+                }
+                &__slide {
+                    flex-direction: column;
+                    gap: 20px;
+                } 
+                &__text {
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-top: 70px;
+                    max-width: inherit;
+                    text-align: center;
+
+                    br {
+                        display: none;
+                    }
+                }
+                .image {
+                    max-width: 500px;
+                }
+                .content {
+                    margin-top: 70px;
+                    margin-right: 0;
+                    max-width: inherit;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .roadmap {
+        .stages {
+            padding: 75px 0;
+
+            .tabs {
+                @include tabs;
+    
+                &__nav-item {
+                    max-width: 120px;
+                }
+            }
+
+            .stage-slider {    
+                &__slide {
+                    padding: 20px;
+
+                    &::before {
+                        width: 40px;
+                        height: 40px;
+                        top: 15px;
+                        left: 15px;
+                    }
+                }
+                &__text {
+                    font-size: 16px;
+                }
+                .image {
+                    max-width: 400px;
+                }
+                &__pagination {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include small-mobile {
+    .roadmap {
+        .stages {
+            .stage-slider {    
+                &__text {
+                    margin-top: 50px;
+                }
+                .image {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
