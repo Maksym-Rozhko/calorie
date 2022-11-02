@@ -268,3 +268,13 @@
         }
     }
 }
+
+@include mobile {
+    .preloader {
+        ul {
+            &.active {
+                animation: increaseScaleMob 7s infinite linear;
+            }
+        }
+    }
+}

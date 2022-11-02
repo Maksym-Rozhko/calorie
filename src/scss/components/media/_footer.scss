@@ -1,3 +1,39 @@
-@include mobile {
+@include small-tablet {
+    .footer {
+        .socials {
+            margin-left: 15px;
+        }
+    }
+}
 
+@include mobile {
+    .footer {
+        padding-bottom: 70px;
+        background-image: url('../images/home/footer-bg-mob.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &__container {
+            padding-top: 70px;
+            flex-direction: column;
+        }
+
+        .socials {
+            margin-left: 0;
+            margin-top: 42px;
+            margin-bottom: 38px;
+        }
+
+        .copyright {
+            margin-right: 0;
+            max-width: 150px;
+            text-align: center;
+        }
+
+        .scroll-top {
+            position: static;
+            margin-top: 43px;
+        }
+    }
 }

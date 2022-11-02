@@ -563,7 +563,7 @@ new Swiper('.swiper.download__slider', {
 
 new Swiper('.swiper.stage1__slider', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   speed: 500,
 
   navigation: {
@@ -579,7 +579,7 @@ new Swiper('.swiper.stage1__slider', {
 
 new Swiper('.swiper.stage2__slider', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   speed: 500,
 
   navigation: {
@@ -595,7 +595,7 @@ new Swiper('.swiper.stage2__slider', {
 
 new Swiper('.swiper.stage3__slider', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   speed: 500,
 
   navigation: {
@@ -611,7 +611,7 @@ new Swiper('.swiper.stage3__slider', {
 
 new Swiper('.swiper.stage4__slider', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   speed: 500,
 
   navigation: {
@@ -627,7 +627,7 @@ new Swiper('.swiper.stage4__slider', {
 
 new Swiper('.swiper.stage5__slider', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   speed: 500,
 
   navigation: {
@@ -643,7 +643,7 @@ new Swiper('.swiper.stage5__slider', {
 
 new Swiper('.swiper.stage6__slider', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   speed: 500,
 
   navigation: {
@@ -659,7 +659,7 @@ new Swiper('.swiper.stage6__slider', {
 
 new Swiper('.swiper.stage7__slider', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   speed: 500,
 
   navigation: {

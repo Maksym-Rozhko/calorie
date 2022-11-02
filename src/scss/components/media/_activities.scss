@@ -16,6 +16,9 @@
 
 @include small-desktop {
     .activities {
+        &__bg {
+            background-position: right;
+        }    
         .make {
             .item {
                 &__title {
@@ -152,7 +155,10 @@
 }
 
 @include mobile {
-    .activities {
+    .activities {    
+        &__bg {
+            background-image: url('../images/activities/header-bg-mob.jpg');
+        }
         .section {
             &__title {
                 font-size: 30px;

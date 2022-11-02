@@ -204,6 +204,30 @@
                     }
                 }
             }
+
+            &__date {
+                position: absolute;
+                bottom: 30px;
+                left: 50px;
+                padding-left: 22px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                color: #696B77;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-image: url('../images/icon/clock.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
         }
         .stage-slider__pagination {
             position: static;

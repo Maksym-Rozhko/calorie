@@ -58,7 +58,10 @@
 @include tablet {
     .roadmap {
         .stages {
-            .stage-slider {   
+            .stage-slider { 
+                &__slide {
+                    padding-bottom: 60px;
+                }  
                 &__text {
                     font-size: 18px;
                     margin-left: 0;
@@ -92,6 +95,7 @@
                 &__slide {
                     flex-direction: column;
                     gap: 20px;
+                    padding-bottom: 70px;
                 } 
                 &__text {
                     margin-left: 0;
@@ -112,6 +116,9 @@
                     margin-right: 0;
                     max-width: inherit;
                 }
+                &__date {
+                    left: 20px;
+                }
             }
         }
     }
@@ -124,15 +131,33 @@
 
             .tabs {
                 @include tabs;
+
+                &__nav {
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    overflow-y: auto;
+                    gap: 10px;
+                }
     
                 &__nav-item {
-                    max-width: 120px;
+                    min-width: 180px;
                 }
             }
 
-            .stage-slider {    
+            .stage-slider {   
+                &__btns {
+                    top: inherit;
+                    bottom: -10px;
+                }
+                &__btns.swiper-button-prev {
+                    left: 10px;
+                }
+                &__btns.swiper-button-next {
+                    right: 10px;
+                } 
                 &__slide {
                     padding: 20px;
+                    padding-bottom: 70px;
 
                     &::before {
                         width: 40px;
@@ -142,13 +167,21 @@
                     }
                 }
                 &__text {
-                    font-size: 16px;
+                    font-size: 24px;
+                    text-align: left;
                 }
                 .image {
-                    max-width: 400px;
+                    max-width: 285px;
                 }
                 &__pagination {
+                    max-width: 200px;
+                    margin-left: auto;
+                    margin-right: auto;
                     margin-top: 20px;
+
+                    .swiper-pagination-bullet {
+                        width: 30px;
+                    }
                 }
             }
         }
@@ -161,9 +194,6 @@
             .stage-slider {    
                 &__text {
                     margin-top: 50px;
-                }
-                .image {
-                    max-width: 300px;
                 }
             }
         }

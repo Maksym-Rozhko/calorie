@@ -16,6 +16,10 @@
         @include flex-all-sb;
     }
 
+    .logo img {
+        max-width: 124px
+    }
+
     .link-download {
         @include link-download;
         font-size: 12px;
