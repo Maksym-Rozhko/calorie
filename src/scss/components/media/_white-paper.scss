@@ -1,7 +1,71 @@
-@include mobile {
-    .white-paper {
-        .content-block__text {
-            flex-direction: column;
-        }
+@include small-desktop {
+  .privacy {
+    &__content {
+      .text-group {
+        gap: 50px;
+        margin-bottom: 60px;
+      }
+
+      h3 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
     }
+
+    .fq {
+      .faq__question-text {
+        padding-left: 0;
+      }
+    }
+
+    table {
+      th {
+        padding: 16px;
+        min-width: 140px;
+      }
+      td {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+@include small-tablet {
+  .privacy {
+    &__content {
+      .text-group {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        ul {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .white-paper {
+      .content-block__text {
+          flex-direction: column;
+      }
+  }
+  .privacy {
+    table {
+      th {
+        padding: 4px;
+        min-width: 80px;
+        font-size: 16px;
+      }
+      td {
+        padding: 4px;
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
