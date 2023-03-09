@@ -41,7 +41,7 @@
 
     .socials {
         @include socials;
-        margin-left: 150px;
+        margin-left: 202px;
 
         .list {
             display: flex;
@@ -54,7 +54,23 @@
         line-height: 15px;
         color: var(--cs-text);
         opacity: .3;
-        margin-right: 56px;
+        margin-left: 40px;
+    }
+
+    .page-link {
+      position: relative;
+      z-index: 11;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--cs-grey);
+      margin-right: 56px;
+      margin-left: auto;
+      transition: all ease-in-out .4s;
+
+      &:hover {
+        color: var(--cs-main);
+      }
     }
 
     .scroll-top {

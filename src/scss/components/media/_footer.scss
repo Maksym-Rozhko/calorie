@@ -1,9 +1,32 @@
-@include small-tablet {
-    .footer {
-        .socials {
-            margin-left: 15px;
-        }
+@include small-desktop {
+  .footer {
+    .socials {
+      margin-left: 35px;
     }
+  }
+}
+
+@include middle-tablet {
+  .footer {
+    &__container {
+      flex-wrap: wrap;
+    }
+    .copyright {
+      width: 100%;
+      order: 1;
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+
+    .socials {
+      margin-left: auto;
+    }
+  }
 }
 
 @include mobile {
@@ -29,6 +52,10 @@
             margin-right: 0;
             max-width: 150px;
             text-align: center;
+        }
+
+        .page-link {
+          margin: 0 auto;
         }
 
         .scroll-top {
