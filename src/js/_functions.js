@@ -69,8 +69,8 @@ AOS.init({
 });
 
 import scrollr from './vendor/_scrollr';
-
-if (isDesktop()) {
+const whitePaperPrivacyParentContainer = document.querySelector('.white-paper.privacy');
+if (isDesktop() && !whitePaperPrivacyParentContainer) {
 	var scroll = scrollr.init({});
 }
 

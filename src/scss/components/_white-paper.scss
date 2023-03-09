@@ -115,6 +115,9 @@
   }
 
   .fq {
+    &__container {
+      scroll-margin: 100px;
+    }
     .faq {
       &__question-text {
         padding-left: 55px;
